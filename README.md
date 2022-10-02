@@ -4,7 +4,9 @@ This is my repository where I post my completed work for DS 311
 ## Checklist for my progress:
 ![16%](https://progress-bar.dev/16)
 ### Week 2
-- [x] Python_Lab_Exercise_1
+- [x]<a href="#">
+    <img src="https://raw.githubusercontent.com/MikeCodesDotNET/ColoredBadges/master/svg/dev/languages/csharp.svg" alt="c#" style="vertical-align:top; margin:4px">
+  </a> Python_Lab_Exercise_1
 ### Week 3
 - [x] Python_Lab_Assignment
 - [ ] Python_Lab_Exercise_2
