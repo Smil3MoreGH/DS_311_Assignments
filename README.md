@@ -10,36 +10,44 @@ This is my repository where I post my completed work for DS 311
 ### Week 3
 - [x] <a href="#">
     <img src="https://raw.githubusercontent.com/MikeCodesDotNET/ColoredBadges/master/svg/dev/languages/python.svg" alt="Python" style="vertical-align:top; margin:4px">
-  </a> **Python_Lab_Assignment
+  </a> **Python_Lab_Assignment**
 - [ ] <a href="#">
     <img src="https://raw.githubusercontent.com/MikeCodesDotNET/ColoredBadges/master/svg/dev/languages/python.svg" alt="Python" style="vertical-align:top; margin:4px">
-  </a> **Python_Lab_Exercise_2
+  </a> **Python_Lab_Exercise_2**
 ### Week 4
 - [ ] <a href="#">
     <img src="https://raw.githubusercontent.com/MikeCodesDotNET/ColoredBadges/master/svg/dev/misc/datascience.svg" alt="SQL" style="vertical-align:top; margin:4px">
-  </a> **SQL_Lab_Assignment_1
+  </a> **SQL_Lab_Assignment_1**
 - [ ] <a href="#">
     <img src="https://raw.githubusercontent.com/MikeCodesDotNET/ColoredBadges/master/svg/dev/misc/datascience.svg" alt="SQL" style="vertical-align:top; margin:4px">
-  </a> **SQL_Lab_Assignment_2
+  </a> **SQL_Lab_Assignment_2**
 - [ ] <a href="#">
     <img src="https://raw.githubusercontent.com/MikeCodesDotNET/ColoredBadges/master/svg/dev/misc/datascience.svg" alt="SQL" style="vertical-align:top; margin:4px">
-  </a> **SQL_Lab_Assignment_3_Optional
+  </a> **SQL_Lab_Assignment_3_Optional**
 - [ ] <a href="#">
     <img src="https://raw.githubusercontent.com/MikeCodesDotNET/ColoredBadges/master/svg/dev/misc/datascience.svg" alt="SQL" style="vertical-align:top; margin:4px">
-  </a> **SQL_Lab_Exercise
+  </a> **SQL_Lab_Exercise**
 ### Week 5
 - [ ] <a href="#">
     <img src="https://raw.githubusercontent.com/MikeCodesDotNET/ColoredBadges/master/svg/dev/languages/r.svg" alt="R" style="vertical-align:top; margin:4px">
-  </a> **R_Lab_Exercise_1
+  </a> **R_Lab_Exercise_1**
 ### Week 6
 - [ ] <a href="#">
     <img src="https://raw.githubusercontent.com/MikeCodesDotNET/ColoredBadges/master/svg/dev/languages/r.svg" alt="R" style="vertical-align:top; margin:4px">
-  </a> **R_Lab_Assignment
+  </a> **R_Lab_Assignment**
 ### Week 7
-- [ ] **Tableau_Lab_Exercise
+- [ ] <a href="#">
+    <img src="https://raw.githubusercontent.com/MikeCodesDotNET/ColoredBadges/master/svg/dev/languages/tableau.svg" alt="R" style="vertical-align:top; margin:4px">
+  </a> **Tableau_Lab_Exercise**
 ### Week 8
-- [ ] **Tableau_Lab_Assignment
+- [ ] <a href="#">
+    <img src="https://raw.githubusercontent.com/MikeCodesDotNET/ColoredBadges/master/svg/dev/languages/tableau.svg" alt="R" style="vertical-align:top; margin:4px">
+  </a> **Tableau_Lab_Assignment**
 ### Week 9
-- [ ] **missing?
+- [ ] <a href="#">
+    <img src="https://raw.githubusercontent.com/MikeCodesDotNET/ColoredBadges/master/svg/dev/languages/tableau.svg" alt="R" style="vertical-align:top; margin:4px">
+  </a> **missing?**
 ### Week 10
-- [ ] **Documentation_Lab_Assignment
+- [ ] <a href="#">
+    <img src="https://raw.githubusercontent.com/MikeCodesDotNET/ColoredBadges/master/svg/dev/languages/tableau.svg" alt="R" style="vertical-align:top; margin:4px">
+  </a> **Documentation_Lab_Assignment**
