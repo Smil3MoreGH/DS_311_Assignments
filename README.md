@@ -1,8 +1,8 @@
 # DS_311_Assignments
 This is my repository where I post my completed work for DS 311
 
-## Checklist for my progress:
-![16%](https://progress-bar.dev/16)
+## Checklist for my progress: ![16%](https://progress-bar.dev/16)
+
 ### Week 2
 - [x] <a href="#">
     <img src="https://raw.githubusercontent.com/MikeCodesDotNET/ColoredBadges/master/svg/dev/languages/python.svg" alt="Python" style="vertical-align:top; margin:4px">
