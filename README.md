@@ -2,7 +2,7 @@
 This is my repository where I post my completed work for DS 311
 
 ## Checklist for my progress:
-![16.66%](https://progress-bar.dev/16.66)
+![16%](https://progress-bar.dev/16)
 ### Week 2
 - [x] Python_Lab_Exercise_1
 ### Week 3
