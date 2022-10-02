@@ -1,7 +1,7 @@
 # DS_311_Assignments
 This is my repository where I post my completed work for DS 311
 
-## Checklist for my progress: ![16%](https://progress-bar.dev/16)
+## Checklist for my total progress: ![16%](https://progress-bar.dev/16)
 
 ### Week 2
 - [x] <a href="#">
