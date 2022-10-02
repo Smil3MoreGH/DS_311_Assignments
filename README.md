@@ -5,8 +5,8 @@ This is my repository where I post my completed work for DS 311
 ![16%](https://progress-bar.dev/16)
 ### Week 2
 - [x]<a href="#">
-    <img src="https://raw.githubusercontent.com/MikeCodesDotNET/ColoredBadges/master/svg/dev/languages/csharp.svg" alt="c#" style="vertical-align:top; margin:4px">
-  </a> Python_Lab_Exercise_1
+    <img src="https://raw.githubusercontent.com/MikeCodesDotNET/ColoredBadges/master/svg/dev/languages/python.svg" alt="Python_Lab_Exercise_1" style="vertical-align:top; margin:4px">
+  </a>
 ### Week 3
 - [x] Python_Lab_Assignment
 - [ ] Python_Lab_Exercise_2
