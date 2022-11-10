@@ -1,7 +1,7 @@
 # DS_311_Assignments
 This is my repository where I post my completed work for DS 311
 
-## Checklist for my total progress: ![23%](https://progress-bar.dev/23)
+## Checklist for my total progress: ![50%](https://progress-bar.dev/50)
 
 ### Week 2
 - [x] <a href="#">
@@ -17,16 +17,13 @@ This is my repository where I post my completed work for DS 311
 ### Week 4
 - [x] <a href="#">
     <img src="https://raw.githubusercontent.com/MikeCodesDotNET/ColoredBadges/master/svg/dev/misc/datascience.svg" alt="SQL" style="vertical-align:top; margin:4px">
-  </a> **SQL_Lab_Assignment_1**
+  </a> ~~**SQL_Lab_Assignment_1**~~
 - [x] <a href="#">
     <img src="https://raw.githubusercontent.com/MikeCodesDotNET/ColoredBadges/master/svg/dev/misc/datascience.svg" alt="SQL" style="vertical-align:top; margin:4px">
-  </a> **SQL_Lab_Assignment_2**
-- [ ] <a href="#">
-    <img src="https://raw.githubusercontent.com/MikeCodesDotNET/ColoredBadges/master/svg/dev/misc/datascience.svg" alt="SQL" style="vertical-align:top; margin:4px">
-  </a> **SQL_Lab_Assignment_3_Optional**
+  </a> ~~**SQL_Lab_Assignment_2**~~
 - [x] <a href="#">
     <img src="https://raw.githubusercontent.com/MikeCodesDotNET/ColoredBadges/master/svg/dev/misc/datascience.svg" alt="SQL" style="vertical-align:top; margin:4px">
-  </a> **SQL_Lab_Exercise**
+  </a> ~~**SQL_Lab_Exercise**~~
 ### Week 5
 - [ ] <a href="#">
     <img src="https://raw.githubusercontent.com/MikeCodesDotNET/ColoredBadges/master/svg/dev/languages/r.svg" alt="R" style="vertical-align:top; margin:4px">
