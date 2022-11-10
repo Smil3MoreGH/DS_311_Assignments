@@ -15,16 +15,16 @@ This is my repository where I post my completed work for DS 311
     <img src="https://raw.githubusercontent.com/MikeCodesDotNET/ColoredBadges/master/svg/dev/languages/python.svg" alt="Python" style="vertical-align:top; margin:4px">
   </a> ~~**Python_Lab_Exercise_2**~~
 ### Week 4
-- [ ] <a href="#">
+- [x] <a href="#">
     <img src="https://raw.githubusercontent.com/MikeCodesDotNET/ColoredBadges/master/svg/dev/misc/datascience.svg" alt="SQL" style="vertical-align:top; margin:4px">
   </a> **SQL_Lab_Assignment_1**
-- [ ] <a href="#">
+- [x] <a href="#">
     <img src="https://raw.githubusercontent.com/MikeCodesDotNET/ColoredBadges/master/svg/dev/misc/datascience.svg" alt="SQL" style="vertical-align:top; margin:4px">
   </a> **SQL_Lab_Assignment_2**
 - [ ] <a href="#">
     <img src="https://raw.githubusercontent.com/MikeCodesDotNET/ColoredBadges/master/svg/dev/misc/datascience.svg" alt="SQL" style="vertical-align:top; margin:4px">
   </a> **SQL_Lab_Assignment_3_Optional**
-- [ ] <a href="#">
+- [x] <a href="#">
     <img src="https://raw.githubusercontent.com/MikeCodesDotNET/ColoredBadges/master/svg/dev/misc/datascience.svg" alt="SQL" style="vertical-align:top; margin:4px">
   </a> **SQL_Lab_Exercise**
 ### Week 5
