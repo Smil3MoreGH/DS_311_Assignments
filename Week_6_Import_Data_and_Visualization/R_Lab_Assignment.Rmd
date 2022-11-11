@@ -1,8 +1,9 @@
 ---
 title: "DS311 - R Lab Assignment"
-author: "Your Name"
-date: "8/22/2022"
-output: 
+author: "Paul Hartung"
+date: "11/10/2022"
+output:
+  pdf_document: default
   html_document:
     theme: united
     highlight: tango
@@ -11,6 +12,23 @@ output:
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
+
+if (!require("RColorBrewer")) {
+install.packages("RColorBrewer")
+library(RColorBrewer)
+}
+
+if (!require("tidyverse")) {
+install.packages("tidyverse")
+library(tidyverse)
+}
+
+if (!require("dplyr")) {
+install.packages("dplyr")
+library(dplyr)
+}
+
+
 ```
 
 ## R Assignment 1
@@ -36,9 +54,13 @@ a. Report the number of variables and observations in the data set.
 ```{r}
 # Enter your code here!
 
+rowscount = ncol(mtcars)
+
+columnscount = nrow(mtcars)
 
 # Answer:
-print("There are total of _____ variables and _____ observations in this data set.")
+print(paste("There are total of ",rowscount," variables and "
+            ,columnscount," observations in this data set."))
 ```
 
 
@@ -47,10 +69,12 @@ b. Print the summary statistics of the data set and report how many discrete and
 
 ```{r}
 # Enter your code here!
+summ = summary(mtcars)
 
+summ
 
 # Answer:
-print("There are _____ discrete variables and _____ continuous variables in this data set.")
+print("There are 5 discrete variables and 6 continuous variables in this data set.")
 ```
 
 
@@ -60,10 +84,13 @@ c. Calculate the mean, variance, and standard deviation for the variable **mpg**
 ```{r}
 # Enter your code here!
 
+average = mean(mtcars$mpg)
 
+variance = var(mtcars$mpg)
 
+standard_deviation = sd(mtcars$mpg)
 
-# print(paste("The average of Mile Per Gallon from this data set is ",  , " with variance ",  , " and standard deviation",  , "."))
+ print(paste("The average of Mile Per Gallon from this data set is " ,round(average,4), " with variance " ,round(variance,4), " and standard deviation",round(standard_deviation,4), "."))
 ```
 
 
@@ -72,8 +99,17 @@ d. Create two tables to summarize 1) average mpg for each cylinder class and 2) 
 
 ```{r}
 # Enter your code here!
+mtcars$gear=as.character(mtcars$gear)
 
+mtcars$cyl=as.character(mtcars$cyl)
 
+mtcars %>%
+  group_by(cyl)%>%
+  summarise(average=mean(mpg))
+
+mtcars %>%
+  group_by(gear)%>%
+  summarise(standard_deviation=sd(mpg))
 
 
 ```
@@ -84,9 +120,13 @@ e. Create a crosstab that shows the number of observations belong to each cylind
 
 ```{r}
 # Enter your code here!
+mtcars%>%
+  group_by(cyl,gear)%>%
+  summarise(number_of_cylinders=n(), .groups = 'drop')%>%
+  arrange(desc(number_of_cylinders))
 
 
-print("The most common car type in this data set is car with ____ cylinders and ____ gears. There are total of _____ cars belong to this specification in the data set.")
+print("The most common car type in this data set is car with 8 cylinders and 3 gears. There are total of 12 cars belong to this specification in the data set.")
 ```
 
 
@@ -107,6 +147,14 @@ head(PlantGrowth)
 
 # Enter your code here!
 
+PlantGrowth%>%
+  ggplot(aes(x=reorder(group,-weight), y=weight))+
+  geom_bar(stat="identity")+
+  labs(title="Plot group compared to mean weight")+
+  xlab("Group")+
+  ylab("Mean Weight")
+
+
 
 ```
 
@@ -114,15 +162,23 @@ Result:
 
 => Report a paragraph to summarize your findings from the plot!
 
+Looking at my chart, I can see the following:
+Plants in group "trt2" are the heaviest at around 55.
+Plants in group "ctrl" are the medium heavy champions with about 50.
+Plants in group "trt1" are the lightest at just over 45.
+
+All measured in average pounds!
+
+
 
 
 b. Using the **mtcars** data set, plot the histogram for the column **mpg** with 10 breaks. Give labels to the title, x-axis, and y-axis on the graph. Report the most observed mpg class from the data set.
 
 ```{r}
 
+hist(mtcars$mpg,main='Histogram MPG / Frequency',xlab='MPG',breaks=10,ylab='Frequency', col = brewer.pal(9, "Blues"))
 
-
-print("Most of the cars in this data set are in the class of ______ mile per gallon.")
+print("Most of the cars in this data set are in the class of 15 mile per gallon.")
 ```
 
 
@@ -137,7 +193,7 @@ data("USArrests")
 head(USArrests)
 
 # Enter your code here!
-
+pairs(~ Murder + Assault, data = USArrests)
 
 ```
 
@@ -145,7 +201,10 @@ Result:
 
 => Report a paragraph to summarize your findings from the plot!
 
-
+Looking at my spreadsheet, I can see the following:
+The more people arrested for assault, the more people arrested for murder.
+The same is true the other way around.
+This show that assault and murder cases are positive correlated.
 
 ***
 
@@ -172,7 +231,20 @@ a. Create your own descriptive statistics and aggregation tables to summarize th
 head(housingData)
 
 # Enter your code here!
+housingData%>%
+  group_by(Neighborhood)%>%
+  summarise(avg_price=mean(Market.Value.per.SqFt))%>%
+  arrange(desc(avg_price))
 
+housingData%>%
+  group_by(Boro)%>%
+  summarise(avg_price=mean(Market.Value.per.SqFt))%>%
+  arrange(desc(avg_price))
+
+housingData%>%
+  group_by(Year.Built)%>%
+  summarise(avg_price=mean(Market.Value.per.SqFt))%>%
+  arrange(desc(avg_price))
 
 ```
 
@@ -180,12 +252,27 @@ b. Create multiple plots to demonstrates the correlations between different vari
 
 ```{r}
 # Enter your code here!
+neighbourhoods = tapply(housingData$Market.Value.per.SqFt, housingData$Neighborhood, median)
+neighbourhoods = sort(neighbourhoods, decreasing = TRUE)
 
+dotchart(neighbourhoods, pch = 21, bg = brewer.pal(9, "Blues"),
+         cex = 0.85,
+         xlab="Average price of a house",
+         main = "Which neighborhood is the most expensive to buy a house in?")
+
+barplot(table(housingData$Year.Built), 
+        main = "When were the most houses built?", 
+        xlab = "Year",
+        ylab = "Number of houses",
+        col = brewer.pal(9, "Blues"))
 
 ```
 
-c. Write a summary about your findings from this exercise.
-
 => Enter your answer here!
 
+Looking at my spreadsheet, I can see the following:
+MIDTOWN CBD has highest avg price per sqft with	234.36$.
+Manhattan	highest avg price per sqft with 180.59$.
+1978 & 1970 & 1973 & 1975	are in the Top 6 years with highest avg price per sqft.
+Plus minus 2 years around 2007, the most houses were built.
 
